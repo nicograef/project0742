@@ -1,0 +1,18 @@
+{
+  "name": "pagemaker",
+  "version": "1.0.0",
+  "description": "Webserver to easily create your own website.",
+  "main": "pagemaker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nico Gräf",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.2",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "querystring": "^0.2.0",
+    "util": "^0.10.3"
+  }
+}

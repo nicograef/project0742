@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+
+	head
+		meta(charset="UTF-8")
+		title #{self.title}
+		link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+		link(rel='stylesheet' href='style.css')
+
+	body
+		// Navigation
+		nav.navbar.navbar-inverse.navbar-custom
+			.container-fluid
+				//- Brand and toggle get grouped for better mobile display
+				.navbar-header.page-scroll
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+						span.sr-only Toggle Menu
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='#') Project0742
+				//- Collect the nav links, forms, and other content for toggling
+				#bs-example-navbar-collapse-1.collapse.navbar-collapse
+					ul.nav.navbar-nav.navbar-right
+						li #[a(href='#') make]
+						li #[a(href='#') about]
+		.container
+			.jumbotron.text-center
+				h1 make it easy.
+				p With Project0742 you can create your own modern and mobile optimized website in minutes!
+			form(action='/formhandler' method='post').form-horizontal
+				.form-group
+					label(for='inputPageTitle').control-label.col-xs-2 Title
+					.col-xs-10
+						input(type='text' name='title' placeholder='Page Title').form-control#inputPageTitle
+				.form-group
+					label(for='inputPageSubtitle').control-label.col-xs-2 Subtitle
+					.col-xs-10
+						input(type='text' name='subtitle' placeholder='Page Subtitle').form-control#inputPageSubtitle
+				.form-group
+					label(for='inputPageHeading').control-label.col-xs-2 Heading
+					.col-xs-10
+						input(type='text' name='heading' placeholder='Page Heading').form-control#inputPageHeading
+				.form-group
+					label(for='inputPageContent').control-label.col-xs-2 Content
+					.col-xs-10
+						textarea(rows='5' name='content' placeholder='Page Content').form-control#inputPageContent
+				.form-group
+					.col-xs-offset-2.col-xs-10
+						button(type='submit').btn.btn-primary.btn-lg Create
+
+
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
