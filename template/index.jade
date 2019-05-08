@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+
+	head
+		meta(charset="UTF-8")
+		title #{self.title}
+		link(rel='stylesheet' href='template/bootstrap.min.css')
+		link(rel='stylesheet' href='template/stylish-portfolio.css')
+		link(href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css")
+
+	body
+		header.header#top
+			.text-vertical-center
+				h1 #{self.title}
+				h3 #{self.subtitle}
+				br
+				a(href="#about").btn.btn-dark.btn-lg Find out more
+
+		section.about#about
+			.container
+				.row
+					.col-lg-12.text-center
+						h2 #{self.heading}
+						p.lead !{self.content}
+		footer
+			.container
+				.row
+					.col-lg-10.col-lg-offset-1.text-center
+						h4 made with project0742
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
