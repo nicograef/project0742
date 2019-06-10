@@ -2,7 +2,7 @@
 
 A simple website maker I made to learn some node.js stuff
 
-Sadly I lost the final version of my code and this repo only represents the alpha version.
+Sadly, I lost the final version of my code and this repo only represents the alpha version.
 
 ## ... but, here's a demo of the final project
 
